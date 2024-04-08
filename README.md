@@ -1,1 +1,0 @@
-# -rvore-de-Decis-o-Para-ou-Exclusivo-1

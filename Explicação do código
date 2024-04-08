@@ -1,0 +1,13 @@
+ Explicação para Árvore de Decisão Para ou Exclusivo 1 - from sklearn import tree: Isso importa a classe tree da biblioteca scikit-learn, que inclui implementações de árvores de decisão para classificação e regressão.
+
+X = [[0, 0], [1, 1], [0, 1], [1, 0]]: Aqui, X é uma lista de listas que representa os atributos dos exemplos de treinamento. Cada lista interna contém os atributos de um exemplo de treinamento. Neste caso, cada exemplo tem dois atributos.
+
+y = [0, 0, 1, 1]: y é uma lista que contém as classes correspondentes para cada exemplo de treinamento em X.
+
+clf = tree.DecisionTreeClassifier(): Aqui, um objeto de classificador de árvore de decisão é criado usando tree.DecisionTreeClassifier().
+
+clf = clf.fit(X, y): O classificador é treinado com os dados de treinamento (X e y) usando o método fit().
+
+text_representation = tree.export_text(clf): Esta linha exporta a árvore de decisão treinada em formato de texto. export_text é um método que converte a árvore de decisão em uma representação textual.
+
+print(text_representation): A representação textual da árvore de decisão é impressa na tela. Esta representação mostra os nós da árvore, as condições de divisão em cada nó e as classes previstas em cada folha.
